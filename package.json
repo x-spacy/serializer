@@ -1,0 +1,54 @@
+{
+  "name": "@x-spacy/serializer",
+  "version": "0.0.0",
+  "description": "Class-transformer extension to serialize and deserialize classes",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "type": "module",
+  "author": {
+    "name": "Vinícius Gutierrez da Silva Rocha",
+    "email": "srgutyerrez@gmail.com",
+    "url": "https://github.com/gutyerrez"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-spacy/serializer.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": "v20.x.x"
+  },
+  "scripts": {
+    "build": "sh scripts/build.sh"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.4.4",
+    "class-transformer": "^0.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-typescript": "^7.24.7",
+    "@x-spacy/eslint-config": "^1.26.0",
+    "eslint": "^9.11.0",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.4.5",
+    "class-transformer": "^0.5.1"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": false
+    },
+    "class-transformer": {
+      "optional": false
+    }
+  }
+}
